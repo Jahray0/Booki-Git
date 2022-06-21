@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "raleway";
+    src : url("polices/raleway-variablefont_wght-webfont.woff2") format("woff2"),
+           url("polices/raleway-variablefont_wght-webfont.woff") format("woff");
+   }
+   
+
+
+/*faire un test avec Normalize*/
+/*
+body
+{
+    max-width: 2000px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+}
+/*surement autre chose a faire
+*/
+* 
+{
+    box-sizing: border-box;
+    /* box-sizing est appliqué à tous les éléments */
+}
+
+/*Mise en page principale de body*/
+
+body
+{
+    width: 90%;
+	min-width: 200px;
+	margin: auto;
+    font-family: raleway;
+    
+}
+
+/*en-tete constitué du logo et des bouttons hébergement et activité*/
+
+header
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*taille du logo*/
+
+header img 
+{
+    height: 65px;
+    
+}
+
+
+#menu
+{
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2em;
+    list-style-type:none;
+    padding:0;
+    margin: 0;
+    
+}
+
+#menu li:hover
+{
+    border-top: solid #0065FC 2px;
+    color : #0065FC;
+    padding-top: 35px;
+
+}
+
+#menu li a
+{
+    padding :30px;
+}
+
+
+#menu li
+{
+   /* border-top: 2px #ffffff solid;*/
+    /*pour ne pas avoir un effet ou le texte bouge lors du survole*/
+  /*  border-bottom: 2px #ffffff solid;*/
+    text-align: center;
+}
+
+
+#recherche
+{
+
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*border : 2px solid #F2F2F2;*/
+    border-radius: 15px;
+  
+}
+
+#recherche p 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+    border : 5px solid #0065FC;
+    background-color: #0065FC;
+    height: 50px;
+    width: 155px; /*ou avec du padding !*/
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    /*object-fit: cover;*/
+    z-index: 1;
+    right : 20px;
+
+}
+
+i[class="fa-solid fa-location-dot"]
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    border : 5px solid #F2F2F2;
+    height: 50px;
+    width: 60px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+i[class="fa-solid fa-magnifying-glass"]
+{
+    display: flex;
+    display: none;
+    /*marche pas*/
+    /*autre solution mettre le logo sous recherche*/
+    /* OK ça marche */
+    z-index: 1;
+    position : relative;
+    right : 300px;
+
+}
+
+
+
+input
+{
+	height: 50px;
+    width: 220px;
+    z-index: 3;
+    position : relative;
+    right : 10px;
+    border : 2px solid #F2F2F2;
+
+}
+
+/*------------- */
+/*Partie Filtre */
+/*------------- */
+
+#bloc_filtre
+{
+    display : flex;
+    font-weight: bold;
+    align-items: center;
+    
+    
+}
+
+#filtre
+{
+    display:flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+
+    
+}
+
+#boutton /*global (texte + image)*/
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+#boutton p /*texte*/
+{
+    
+    border : 2px solid #c5c5c5;
+    padding : 10px;
+    padding-left: 40px;
+    border-radius: 20px;
+    
+    
+}
+
+#boutton p:hover
+{
+    background-color: aquamarine;
+}
+
+
+#boutton i /*Logo font awesome*/
+{
+    border : 2px solid #DEEBFF;
+    margin: 10px;
+    padding : 10px;
+    border-radius: 20px;
+    background-color: #DEEBFF;
+    position : relative;
+    top : 0px;
+    left : 49px; /*arranger un peu*/
+                  /*font-seiz a changer mais aussi le reste*/
+    height: 42px;
+    width: 42px;
+    text-align: center;
+
+
+}
+
+
+#under_filtre
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+i[class="fa-solid fa-info"]
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #F2F2F2 solid 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    margin-right: 15px;
+    color: #0065FC;
+
+}
+
+
+
+
+
+
+/*------------------------*/
+/*Hebergement + Populaire */
+/*------------------------*/
+
+#partie_supp
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    
+}
+
+#hebergement
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding : 2%;
+    max-width: 70%;
+    min-width: 375px;
+    border-radius: 20px;
+   
+
+}
+
+
+
+#hebergement #ensemble_vign
+{
+    display : flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+}
+
+
+#card
+{
+    display : flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding : 10px;
+    margin-top : 5px;
+    margin-bottom : 20px;
+    
+}
+
+a:link /*on enleve le soulignement du lien */
+{ 
+    text-decoration:none; 
+    
+} 
+
+a
+{
+    color : black;
+}
+
+em
+{
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+a #card:hover
+{
+    background-color: aquamarine;
+}
+
+#hebergement img
+{
+    max-width: 320px;
+    max-height: 150px;
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+#populaire
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding : 2%;
+    margin-left: 2%;
+
+}
+
+
+#populaire #card_body
+{
+    margin-left: 20px;
+}
+
+#populaire i
+{
+    margin-top: 15%;
+}
+
+
+
+#populaire img
+{
+    max-width: 170px;
+    max-height: 175px;
+    height: 175px;
+    width: 170px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+/*#populaire #texte
+{
+    display : flex;
+    flex-direction: column;
+}*/
+
+#populaire #card
+{
+    display : flex;
+    flex-direction: row;
+    
+    min-width: 380px;
+    max-width: 400px;
+    
+
+}
+
+
+
+
+#card_stars
+{
+    color : #0065FC;
+}
+
+
+#activite
+{
+    display : flex;
+    flex-direction: column;
+}
+
+#ensemble_card
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #0065FC;
+}
+
+
+
+#short_card
+{
+    border-radius: 20px;
+    background-color: white;
+    display : flex;
+    flex-direction: column;
+    margin-right: 40px;
+
+}
+
+
+#activite img
+{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+
+footer
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+#a_propos
+{
+    margin-right: 20%;
+}
+
+
+#nos_hebergements
+{
+    margin-right: 20%;
+}
+/*bleu (#0065FC), 
+une version plus claire de ce bleu (#DEEBFF) 
+gris pour le fond (#F2F2F2).*/
