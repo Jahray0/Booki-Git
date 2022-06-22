@@ -4,9 +4,23 @@
     font-family: "raleway";
     src : url("polices/raleway-variablefont_wght-webfont.woff2") format("woff2"),
            url("polices/raleway-variablefont_wght-webfont.woff") format("woff");
-   }
+}
    
 
+html
+{
+    font-family: raleway;
+}
+
+
+
+main
+{
+    width: 90%;
+    min-width: 200px;
+	margin: auto;
+    
+}
 
 /*faire un test avec Normalize*/
 /*
@@ -29,10 +43,9 @@ body
 
 body
 {
-    width: 90%;
-	min-width: 200px;
-	margin: auto;
-    font-family: raleway;
+    
+    padding:0;
+    margin: 0;
     
 }
 
@@ -44,6 +57,9 @@ header
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    min-width: 200px;
+	margin: auto;
 }
 
 /*taille du logo*/
@@ -71,7 +87,7 @@ header img
 {
     border-top: solid #0065FC 2px;
     color : #0065FC;
-    padding-top: 35px;
+
 
 }
 
@@ -87,6 +103,7 @@ header img
     /*pour ne pas avoir un effet ou le texte bouge lors du survole*/
   /*  border-bottom: 2px #ffffff solid;*/
     text-align: center;
+    padding:30px;
 }
 
 
@@ -157,6 +174,8 @@ input
     position : relative;
     right : 10px;
     border : 2px solid #F2F2F2;
+    font-size: medium;
+    font-weight: bold;
 
 }
 
@@ -202,7 +221,7 @@ input
 
 #boutton p:hover
 {
-    background-color: aquamarine;
+    background-color: #0065FC;
 }
 
 
@@ -321,7 +340,7 @@ em
 
 a #card:hover
 {
-    background-color: aquamarine;
+    background-color: #DEEBFF;
 }
 
 #hebergement img
@@ -386,13 +405,12 @@ a #card:hover
 
 }
 
-
-
-
 #card_stars
 {
     color : #0065FC;
 }
+
+
 
 
 #activite
@@ -406,24 +424,16 @@ a #card:hover
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #0065FC;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 
-
-
-#short_card
-{
-    border-radius: 20px;
-    background-color: white;
-    display : flex;
-    flex-direction: column;
-    margin-right: 40px;
-
-}
 
 
 #activite img
 {
+    
     width: 350px;
     height: 400px;
     object-fit: cover;
@@ -431,6 +441,50 @@ a #card:hover
     border-top-right-radius: 20px;
 }
 
+#short_card1, #short_card2, #short_card3, #short_card4, #short_card5, #short_card6
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px red;
+}
+
+#short_card1 img 
+{
+    height: 460px;
+
+}
+
+#short_card2 img
+{
+    height: 220px;
+
+}
+
+#short_card3 img
+{
+    height: 180px;
+
+}
+
+#short_card4 img
+{
+    height: 460px;
+
+}
+
+#short_card5 img
+{
+    height: 200px;
+
+}
+
+#short_card6 img
+{
+    height: 200px;
+
+}
 
 
 
