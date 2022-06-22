@@ -364,13 +364,26 @@ a #card:hover
 
 }
 
+#populaire #titre
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i[class="fa-solid fa-star"]
+{
+    font-size: x-large;
+}
+
 
 #populaire #card_body
 {
     margin-left: 20px;
 }
 
-#populaire i
+#populaire #stars i
 {
     margin-top: 15%;
 }
@@ -417,6 +430,7 @@ a #card:hover
 {
     display : flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 #ensemble_card
@@ -447,7 +461,9 @@ a #card:hover
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 5px 5px red;
+    box-shadow: 5px 5px 2px #F2F2F2, -5px 5px 2px #F2F2F2;
+    padding : 10px;
+    
 }
 
 #short_card1 img 
@@ -458,13 +474,13 @@ a #card:hover
 
 #short_card2 img
 {
-    height: 220px;
+    height: 210px;
 
 }
 
 #short_card3 img
 {
-    height: 180px;
+    height: 140px;
 
 }
 
@@ -476,14 +492,28 @@ a #card:hover
 
 #short_card5 img
 {
-    height: 200px;
+    height: 160px;
 
 }
 
 #short_card6 img
 {
-    height: 200px;
+    height: 160px;
 
+}
+
+#deux
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#quatre
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -492,18 +522,21 @@ footer
 {
     display:flex;
     flex-direction: row;
-    justify-content: flex-start
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding-left: 5%;
+    padding-right: 5%;   
 }
 
-#a_propos
+footer div
 {
-    margin-right: 20%;
+    margin-right: 15%;
 }
 
-
+/*
 #nos_hebergements
 {
-    margin-right: 20%;
+    margin-right: 15%;
 }
 /*bleu (#0065FC), 
 une version plus claire de ce bleu (#DEEBFF) 
