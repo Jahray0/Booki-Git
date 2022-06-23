@@ -20,6 +20,7 @@ main
     min-width: 200px;
 	margin: auto;
     
+    
 }
 
 * 
@@ -88,9 +89,9 @@ header img
 
 #menu li
 {
-   /* border-top: 2px #ffffff solid;*/
+   border-top: 2px #ffffff solid;
     /*pour ne pas avoir un effet ou le texte bouge lors du survole*/
-  /*  border-bottom: 2px #ffffff solid;*/
+    
     text-align: center;
     padding:30px;
 }
@@ -179,6 +180,11 @@ input
     align-items: center;
     
     
+}
+
+#bloc_filtre i
+{
+    color: #0065FC;
 }
 
 #filtre

@@ -2,8 +2,15 @@ body
 {
 
     min-width: 300px;
-    width: 90%;
-    background-color:aqua;
+
+}
+
+main
+{
+    width: unset;
+    min-width: 200px;
+
+    
 }
 
 
@@ -11,6 +18,12 @@ header
 {
     display : flex;
     flex-direction: column;
+    width: 0;
+}
+
+header img
+{
+    padding-left:30px;
 }
 
 
@@ -20,7 +33,7 @@ header
 {
     width: 100%;
     display: flex;
-    justify-content: center;
+
     min-width: 250px;
     /*border-top: none;*/
     padding : 0px;
@@ -28,17 +41,22 @@ header
 
 #menu li:hover
 {
-    border-top: 2px white solid;   
+    border-top: unset;
     border-bottom: 2px #0065FC solid;
     color: #0065FC;
 }
 
 #menu li
 {
-    padding-left: 75px;
-    padding-right: 75px;
+    border-bottom: 2px solid #F2F2F2;
+    border-top: 2px solid white;
+
     
 }
+
+
+
+
 
 #recherche
 {
@@ -62,10 +80,6 @@ header
     flex-direction: column;
     
 }
-
-
-
-
 
 input
 {
@@ -95,9 +109,63 @@ i[class="fa-solid fa-magnifying-glass"]
 
 #partie_supp
 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between; 
 }
+
+
+#ensemble_vign 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#populaire
+{
+
+    margin-left: 0;
+    border-radius: 0;
+}
+
+
+
+
+
+#hebergement
+{
+
+    margin-left: unset;
+    border-radius: unset;
+    max-width: unset;
+    min-width: unset;
+    background-color: white;
+    
+}
+
+#hebergement #ensemble_vign 
+{
+    justify-content: center;
+}
+
+
+#activite
+{
+    padding : 2%;
+
+
+}
+
+#activite #ensemble_card
+{
+    justify-content: center;
+}
+
+
+
+
+
+
 
 footer
 {
