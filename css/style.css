@@ -22,17 +22,6 @@ main
     
 }
 
-/*faire un test avec Normalize*/
-/*
-body
-{
-    max-width: 2000px;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-
-}
-/*surement autre chose a faire
-*/
 * 
 {
     box-sizing: border-box;
@@ -317,6 +306,8 @@ i[class="fa-solid fa-info"]
     padding : 10px;
     margin-top : 5px;
     margin-bottom : 20px;
+    transition: transform .1s; 
+    /*transition : mise en place du zoom sur la carte lors du survole*/
     
 }
 
@@ -338,10 +329,21 @@ em
 
 }
 
-a #card:hover
+/*Zoom au survole*/
+
+a #card:hover 
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+
+/*
 {
     background-color: #DEEBFF;
-}
+} survole carte avec changement couleurs
+*/
 
 #hebergement img
 {
@@ -351,7 +353,9 @@ a #card:hover
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+    
 }
+
 
 #populaire
 {
@@ -372,7 +376,7 @@ a #card:hover
     align-items: center;
 }
 
-i[class="fa-solid fa-star"]
+#populaire #titre i[class="fa-solid fa-star"]
 {
     font-size: x-large;
 }
@@ -383,7 +387,7 @@ i[class="fa-solid fa-star"]
     margin-left: 20px;
 }
 
-#populaire #stars i
+#populaire #card_stars i
 {
     margin-top: 15%;
 }
@@ -525,7 +529,9 @@ footer
     justify-content: space-between;
     background-color: #F2F2F2;
     padding-left: 5%;
-    padding-right: 5%;   
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 footer div
