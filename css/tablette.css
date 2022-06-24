@@ -1,6 +1,50 @@
-body 
+#html
 {
-    
+    min-width: 950px;
+}
+
+#bloc_filtre
+{
+    flex-direction: column;
+}
+
+#bloc_filtre #titre
+{
+    padding-left: 40px;
 }
 
 
+#partie_supp
+{
+    flex-direction: column;
+}
+
+#hebergement
+{
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+#hebergement img
+{
+    max-width: 380px;
+    width: 380px;
+}
+
+#populaire
+{
+    margin-left: 0;
+}
+
+#ensemble_vign
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#un, #deux, #trois, #quatre
+{
+    margin-bottom: 20px;
+}

@@ -1,18 +1,13 @@
 body 
 {
-
     min-width: 300px;
-
 }
 
 main
 {
     width: unset;
-    min-width: 200px;
-
-    
+    min-width: 200px;  
 }
-
 
 header
 {
@@ -26,14 +21,22 @@ header img
     padding-left:30px;
 }
 
+#intro
+{
+    margin-left: 4% ;
+    margin-right: 4%;
+}
 
-
+#under_filtre
+{
+    margin-left: 4% ;
+    margin-right: 4%;    
+}
 
 #menu
 {
     width: 100%;
     display: flex;
-
     min-width: 250px;
     /*border-top: none;*/
     padding : 0px;
@@ -49,12 +52,15 @@ header img
 #menu li
 {
     border-bottom: 2px solid #F2F2F2;
-    border-top: 2px solid white;
-
-    
+    border-top: 2px solid white;  
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-
+#menu li a
+{
+    padding :15px;
+}
 
 
 
@@ -67,7 +73,6 @@ header img
 #recherche p 
 {
     display: none;
-    
 }
 
 #recherche i 
@@ -78,8 +83,20 @@ header img
 #bloc_filtre
 {
     flex-direction: column;
-    
 }
+
+#bloc_filtre #titre
+{
+    padding-left: 20px;
+}
+
+#boutton
+{
+    position: relative;
+    right: 20px;
+}
+
+
 
 input
 {
@@ -113,6 +130,17 @@ i[class="fa-solid fa-magnifying-glass"]
     justify-content: space-between; 
 }
 
+#card
+{
+    box-shadow: 5px 5px 2px #F2F2F2, -5px 5px 2px #F2F2F2;
+    padding: 5px;
+}
+
+a #card:hover 
+{
+    transform: scale(1.05);
+}
+
 
 #ensemble_vign 
 {
@@ -126,6 +154,17 @@ i[class="fa-solid fa-magnifying-glass"]
 
     margin-left: 0;
     border-radius: 0;
+    padding : 4%;
+}
+
+#populaire #card_body
+{
+    margin-left: 10px;
+}
+
+#populaire #card
+{
+    min-width: 300px;
 }
 
 
@@ -148,12 +187,20 @@ i[class="fa-solid fa-magnifying-glass"]
     justify-content: center;
 }
 
+#hebergement img
+{
+    width: 330px;
+}
+
 
 #activite
 {
     padding : 2%;
+}
 
-
+#activite img
+{
+    width: 330px;
 }
 
 #activite #ensemble_card
