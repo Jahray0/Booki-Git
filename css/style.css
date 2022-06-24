@@ -65,6 +65,7 @@ h1
     font-size:x-large;
 }
 
+/*en haut a droite activité + hebergement*/
 
 #menu
 {
@@ -77,6 +78,17 @@ h1
     margin: 0;
     
 }
+
+#menu li
+{
+   border-top: 2px #ffffff solid;
+    /*pour ne pas avoir un effet ou le texte bouge lors du survole*/
+    
+    text-align: center;
+    padding:30px;
+}
+
+/*Survol du menu*/
 
 #menu li:hover
 {
@@ -94,16 +106,7 @@ h1
     
 }
 
-
-#menu li
-{
-   border-top: 2px #ffffff solid;
-    /*pour ne pas avoir un effet ou le texte bouge lors du survole*/
-    
-    text-align: center;
-    padding:30px;
-}
-
+/*Barre de recherche*/
 
 #recherche
 {
@@ -115,6 +118,8 @@ h1
     border-radius: 15px;
   
 }
+
+/*Boutton de recherche*/
 
 #recherche p 
 {
@@ -135,6 +140,8 @@ h1
 
 }
 
+/*Logo position*/
+
 i[class="fa-solid fa-location-dot"]
 {
     display: flex;
@@ -149,6 +156,8 @@ i[class="fa-solid fa-location-dot"]
     z-index: 2;
 }
 
+/*Logo recherche (mode smartphone)*/
+
 i[class="fa-solid fa-magnifying-glass"]
 {
     display: flex;
@@ -162,7 +171,7 @@ i[class="fa-solid fa-magnifying-glass"]
 
 }
 
-
+/*Champ de recherche*/
 
 input
 {
@@ -223,18 +232,20 @@ input
 #boutton i
 {
     
-    padding: 10px;
-    border: solid 2px #F2F2F2;
-    border-radius: 20px;
-    height: 40px;
-    width: 40px;
+    padding : 12px;
+    border-radius: 25px;
+    height: 43px;
+    width: 43px;
     text-align: center;
     color :#0065FC;
     background-color: #DEEBFF;
     position: relative;
     right: -40px;
+    align-content:flex-end;
     
 }
+
+/*position + deco texte boutton*/
 
 #boutton p
 {
@@ -244,12 +255,10 @@ input
     border-radius: 20px;
     padding-left: 40px;
     /*position: relative;*/
-    /*left: -40px;*/
-    
-    
-    
-    
+    /*left: -40px;*/    
 }
+
+/*Survol du filtre*/
 
 #boutton p:hover
 {
@@ -258,6 +267,7 @@ input
 
 }
 
+/*petit texte en dessous du filtre*/
 
 #under_filtre
 {
@@ -266,6 +276,8 @@ input
     align-items: center;
     
 }
+
+/*Logo info*/
 
 i[class="fa-solid fa-info"]
 {
@@ -281,22 +293,20 @@ i[class="fa-solid fa-info"]
 
 }
 
-
-
-
-
-
 /*------------------------*/
 /*Hebergement + Populaire */
 /*------------------------*/
+
+/*Hebergement + Populaire */
 
 #partie_supp
 {
     display:flex;
     flex-direction: row;
     justify-content: space-between; 
-    
 }
+
+/*Hebergement */
 
 #hebergement
 {
@@ -307,11 +317,9 @@ i[class="fa-solid fa-info"]
     max-width: 70%;
     min-width: 375px;
     border-radius: 20px;
-   
-
 }
 
-
+/*Contient toutes les vignettes*/
 
 #hebergement #ensemble_vign
 {
@@ -322,6 +330,7 @@ i[class="fa-solid fa-info"]
 
 }
 
+/*Une vignettes*/
 
 #card
 {
@@ -337,18 +346,17 @@ i[class="fa-solid fa-info"]
     
 }
 
-a:link /*on enleve le soulignement du lien */
+a:link /*on enleve le soulignement des liens */
 { 
     text-decoration:none; 
-    
 } 
 
-a
+a /*on enleve la couleur des liens*/
 {
     color : black;
 }
 
-em
+em /*Prix en gras*/
 {
     font-weight: bold;
     font-style: normal;
@@ -364,12 +372,7 @@ a #card:hover
     transform: scale(1.1);
 }
 
-
-/*
-{
-    background-color: #DEEBFF;
-} survole carte avec changement couleurs
-*/
+/*image dans la vignette*/
 
 #hebergement img
 {
@@ -382,6 +385,7 @@ a #card:hover
     
 }
 
+/* Populaire */
 
 #populaire
 {
@@ -391,9 +395,9 @@ a #card:hover
     border-radius: 20px;
     padding : 2%;
     margin-left: 2%;
-    
-
 }
+
+/*
 
 #populaire #titre
 {
@@ -403,23 +407,28 @@ a #card:hover
     align-items: center;
 }
 
+/*étoile noire a coté de populaire*/
+
 #populaire #titre i[class="fa-solid fa-star"]
 {
     font-size: x-large;
 }
 
+/*corps de la vignette*/
 
 #populaire #card_body
 {
     margin-left: 20px;
 }
 
+/*Décalage des etoiles pour la partie populaire*/
+
 #populaire #card_stars i
 {
     margin-top: 15%;
 }
 
-
+/*image dans la vignette*/
 
 #populaire img
 {
@@ -464,6 +473,11 @@ a #card:hover
     margin-bottom: 30px;
 }
 
+#activite h3
+{
+    padding-left:10px;
+}
+
 #ensemble_card
 {
     display: flex;
@@ -493,15 +507,16 @@ a #card:hover
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 5px 5px 2px #F2F2F2, -5px 5px 2px #F2F2F2;
-    padding : 10px;   
+    padding-bottom : 5px;   
     transition: transform .1s;  
+    margin-bottom: 25px;
 }
 
 a #short_card1:hover ,a #short_card2:hover ,a #short_card3:hover ,a #short_card4:hover ,a #short_card5:hover ,a #short_card6:hover 
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 
 #short_card1 img 

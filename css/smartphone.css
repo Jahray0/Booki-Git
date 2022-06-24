@@ -201,6 +201,7 @@ a #card:hover
 #activite img
 {
     width: 330px;
+    height: 140px;
 }
 
 #activite #ensemble_card
