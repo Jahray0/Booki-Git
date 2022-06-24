@@ -179,6 +179,7 @@ a #card:hover
     max-width: unset;
     min-width: unset;
     background-color: white;
+    padding : 4%;
     
 }
 
@@ -195,12 +196,12 @@ a #card:hover
 
 #activite
 {
-    padding : 2%;
+    padding : 4%;
 }
 
 #activite img
 {
-    width: 330px;
+    width: 350px;
     height: 140px;
 }
 
