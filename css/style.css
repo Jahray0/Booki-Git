@@ -19,7 +19,7 @@ main
     width: 90%;
     min-width: 200px;
 	margin: auto;
-    
+
     
 }
 
@@ -173,43 +173,72 @@ input
 /*Partie Filtre */
 /*------------- */
 
+/*Titre + boutton*/
+
 #bloc_filtre
 {
-    display : flex;
-    font-weight: bold;
-    align-items: center;
-    
-    
+    display: flex;
+    flex-direction: row;
 }
 
-#bloc_filtre i
-{
-    color: #0065FC;
-}
 
-#filtre
-{
-    display:flex;
-    flex-wrap: wrap;
-    font-weight: bold;
+/*texte dans le boutton*/
 
-    
-}
-
-#boutton /*global (texte + image)*/
+#bloc_filtre p
 {
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*ensemble logo + texte*/
+
+#boutton
+{
+    display:flex;
+    align-items: center;
+}
+
+/*ensemble des bouttons*/
+
+#filtre
+{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+/*logo du boutton*/
+
+#boutton i
+{
+    
+    padding: 10px;
+    border: solid 2px #F2F2F2;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color :#0065FC;
+    background-color: #DEEBFF;
+    position: relative;
+    right: -40px;
     
 }
 
-#boutton p /*texte*/
+#boutton p
 {
-    
-    border : 2px solid #c5c5c5;
-    padding : 10px;
-    padding-left: 40px;
+
+    border: solid 2px #F2F2F2;
+    padding: 9px;
     border-radius: 20px;
+    padding-left: 40px;
+    /*position: relative;*/
+    /*left: -40px;*/
+    
+    
     
     
 }
@@ -217,26 +246,15 @@ input
 #boutton p:hover
 {
     background-color: #0065FC;
-}
-
-
-#boutton i /*Logo font awesome*/
-{
-    border : 2px solid #DEEBFF;
-    margin: 10px;
-    padding : 10px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
-    position : relative;
-    top : 0px;
-    left : 49px; /*arranger un peu*/
-                  /*font-seiz a changer mais aussi le reste*/
-    height: 42px;
-    width: 42px;
-    text-align: center;
-
+    color: white;
 
 }
+
+
+
+
+
+
 
 
 #under_filtre
