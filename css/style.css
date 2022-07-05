@@ -211,7 +211,7 @@ input
 
 /*ensemble logo + texte*/
 
-#boutton
+.boutton
 {
     display:flex;
     align-items: center;
@@ -229,7 +229,7 @@ input
 
 /*logo du boutton*/
 
-#boutton i
+.boutton i
 {
     
     padding : 12px;
@@ -247,7 +247,7 @@ input
 
 /*position + deco texte boutton*/
 
-#boutton p
+.boutton p
 {
 
     border: solid 2px #F2F2F2;
@@ -260,7 +260,7 @@ input
 
 /*Survol du filtre*/
 
-#boutton p:hover
+.boutton p:hover
 {
     background-color: #0065FC;
     color: white;
@@ -332,7 +332,7 @@ i[class="fa-solid fa-info"]
 
 /*Une vignettes*/
 
-#card
+.card
 {
     display : flex;
     flex-direction: column;
@@ -365,7 +365,7 @@ em /*Prix en gras*/
 
 /*Zoom au survole*/
 
-a #card:hover 
+a .card:hover 
 {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
@@ -376,6 +376,7 @@ a #card:hover
 
 #hebergement img
 {
+    display: flex;
     max-width: 320px;
     max-height: 140px;
     width: 320px;
@@ -447,7 +448,7 @@ a #card:hover
     flex-direction: column;
 }*/
 
-#populaire #card
+#populaire .card
 {
     display : flex;
     flex-direction: row;
@@ -458,7 +459,7 @@ a #card:hover
 
 }
 
-#card_stars
+.card_stars
 {
     color : #0065FC;
 }
