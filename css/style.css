@@ -314,7 +314,7 @@ i[class="fa-solid fa-info"]
     flex-direction: column;
     background-color: #F2F2F2;
     padding : 2%;
-    max-width: 70%;
+    width: 70%;
     min-width: 375px;
     border-radius: 20px;
 }
@@ -325,7 +325,7 @@ i[class="fa-solid fa-info"]
 {
     display : flex;
     flex-direction: row;
-    flex-flow: wrap;
+    /*flex-flow: wrap;*/
     justify-content: space-between;
 
 }
@@ -334,7 +334,10 @@ i[class="fa-solid fa-info"]
 
 .card
 {
-    display : flex;
+    display: flex;
+    max-width: 380px; /*1*/
+    min-width: 100px;
+    margin: 0px auto; /*2*/
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
@@ -344,6 +347,13 @@ i[class="fa-solid fa-info"]
     transition: transform .1s; 
     /*transition : mise en place du zoom sur la carte lors du survole*/
     
+}
+
+#herbergement .card_img
+{
+    height: 180px;/*1*/
+    position: relative;/*2*/
+    overflow: hidden;/*3*/
 }
 
 a:link /*on enleve le soulignement des liens */
@@ -376,10 +386,15 @@ a .card:hover
 
 #hebergement img
 {
-    display: flex;
-    max-width: 320px;
-    max-height: 140px;
-    width: 320px;
+    
+    width: 100%;/*4*/
+    height: auto;
+
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;

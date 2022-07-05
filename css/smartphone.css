@@ -90,7 +90,7 @@ header img
     padding-left: 20px;
 }
 
-#boutton
+.boutton
 {
     position: relative;
     right: 20px;
@@ -130,13 +130,13 @@ i[class="fa-solid fa-magnifying-glass"]
     justify-content: space-between; 
 }
 
-#card
+.card
 {
     box-shadow: 5px 5px 2px #F2F2F2, -5px 5px 2px #F2F2F2;
     padding: 5px;
 }
 
-a #card:hover 
+a .card:hover 
 {
     transform: scale(1.05);
 }
@@ -157,12 +157,12 @@ a #card:hover
     padding : 4%;
 }
 
-#populaire #card_body
+#populaire .card_body
 {
     margin-left: 10px;
 }
 
-#populaire #card
+#populaire .card
 {
     min-width: 300px;
 }
@@ -176,7 +176,7 @@ a #card:hover
 
     margin-left: unset;
     border-radius: unset;
-    max-width: unset;
+    width: 100%;
     min-width: unset;
     background-color: white;
     padding : 4%;
