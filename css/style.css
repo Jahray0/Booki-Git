@@ -452,11 +452,7 @@ a .card:hover
 {
     display : flex;
     flex-direction: row;
-    
-    min-width: 380px;
-    max-width: 400px;
-    
-
+  
 }
 
 .card_stars
