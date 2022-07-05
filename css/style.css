@@ -319,6 +319,11 @@ i[class="fa-solid fa-info"]
     border-radius: 20px;
 }
 
+#hebergement a
+{
+    width: 30%;
+}
+
 /*Contient toutes les vignettes*/
 
 #hebergement #ensemble_vign
@@ -337,6 +342,7 @@ i[class="fa-solid fa-info"]
     display: flex;
     max-width: 380px; /*1*/
     min-width: 100px;
+
     margin: 0px auto; /*2*/
     flex-direction: column;
     background-color: white;
@@ -351,7 +357,8 @@ i[class="fa-solid fa-info"]
 
 #herbergement .card_img
 {
-    height: 180px;/*1*/
+
+
     position: relative;/*2*/
     overflow: hidden;/*3*/
 }
@@ -388,7 +395,7 @@ a .card:hover
 {
     
     width: 100%;/*4*/
-    height: auto;
+    height: 180px;
 
     /*position: absolute;
     top: 50%;
