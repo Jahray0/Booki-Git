@@ -5,14 +5,11 @@
     src : url("polices/raleway-variablefont_wght-webfont.woff2") format("woff2"),
            url("polices/raleway-variablefont_wght-webfont.woff") format("woff");
 }
-   
 
 html
 {
     font-family: raleway;
 }
-
-
 
 main
 {
@@ -32,11 +29,9 @@ main
 /*Mise en page principale de body*/
 
 body
-{
-    
+{   
     padding:0;
-    margin: 0;
-    
+    margin: 0;  
 }
 
 /*en-tete constitué du logo et des bouttons hébergement et activité*/
@@ -44,14 +39,12 @@ body
 header
 {
     display : flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     min-width: 200px;
 	margin: auto;
 }
-
 
 /*taille du logo*/
 
@@ -75,15 +68,13 @@ h1
     font-size: 1.2em;
     list-style-type:none;
     padding:0;
-    margin: 0;
-    
+    margin: 0;  
 }
 
 #menu li
 {
    border-top: 2px #ffffff solid;
-    /*pour ne pas avoir un effet ou le texte bouge lors du survole*/
-    
+    /*pour ne pas avoir un effet ou le texte bouge lors du survole*/   
     text-align: center;
     padding:30px;
 }
@@ -95,28 +86,21 @@ h1
     border-top: solid #0065FC 2px;
 }
 
-#menu li a:hover
-{
-    color : #0065FC;
-}
 
 #menu li a
 {
-    padding :30px;
-    
+    padding :30px;   
 }
 
 /*Barre de recherche*/
 
 #recherche
 {
-
     display : flex;
     justify-content: flex-start;
     align-items: center;
     /*border : 2px solid #F2F2F2;*/
-    border-radius: 15px;
-  
+    border-radius: 15px; 
 }
 
 /*Boutton de recherche*/
@@ -137,7 +121,6 @@ h1
     /*object-fit: cover;*/
     z-index: 1;
     right : 20px;
-
 }
 
 /*Logo position*/
@@ -162,13 +145,9 @@ i[class="fa-solid fa-magnifying-glass"]
 {
     display: flex;
     display: none;
-    /*marche pas*/
-    /*autre solution mettre le logo sous recherche*/
-    /* OK ça marche */
     z-index: 1;
     position : relative;
     right : 300px;
-
 }
 
 /*Champ de recherche*/
@@ -183,7 +162,7 @@ input
     border : 2px solid #F2F2F2;
     font-size: medium;
     font-weight: bold;
-
+    color:grey;
 }
 
 /*------------- */
@@ -197,7 +176,6 @@ input
     display: flex;
     flex-direction: row;
 }
-
 
 /*texte dans le boutton*/
 
@@ -223,15 +201,13 @@ input
 {
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
 }
 
 /*logo du boutton*/
 
 .boutton i
-{
-    
+{   
     padding : 12px;
     border-radius: 25px;
     height: 43px;
@@ -241,21 +217,17 @@ input
     background-color: #DEEBFF;
     position: relative;
     right: -40px;
-    align-content:flex-end;
-    
+    align-content:flex-end;   
 }
 
 /*position + deco texte boutton*/
 
 .boutton p
 {
-
     border: solid 2px #F2F2F2;
     padding: 9px;
     border-radius: 20px;
-    padding-left: 40px;
-    /*position: relative;*/
-    /*left: -40px;*/    
+    padding-left: 40px;   
 }
 
 /*Survol du filtre*/
@@ -264,7 +236,6 @@ input
 {
     background-color: #0065FC;
     color: white;
-
 }
 
 /*petit texte en dessous du filtre*/
@@ -273,8 +244,7 @@ input
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 /*Logo info*/
@@ -290,77 +260,6 @@ i[class="fa-solid fa-info"]
     border-radius: 20px;
     margin-right: 15px;
     color: #0065FC;
-
-}
-
-/*------------------------*/
-/*Hebergement + Populaire */
-/*------------------------*/
-
-/*Hebergement + Populaire */
-
-#partie_supp
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between; 
-}
-
-/*Hebergement */
-
-#hebergement
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    padding : 2%;
-    width: 70%;
-    min-width: 375px;
-    border-radius: 20px;
-}
-
-#hebergement a
-{
-    width: 30%;
-}
-
-/*Contient toutes les vignettes*/
-
-#hebergement #ensemble_vign
-{
-    display : flex;
-    flex-direction: row;
-    /*flex-flow: wrap;*/
-    justify-content: space-between;
-
-}
-
-/*Une vignettes*/
-
-.card
-{
-    display: flex;
-    max-width: 380px; /*1*/
-    min-width: 100px;
-
-    margin: 0px auto; /*2*/
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
-    padding : 10px;
-    margin-top : 5px;
-    margin-bottom : 20px;
-    transition: transform .1s; 
-    /*transition : mise en place du zoom sur la carte lors du survole*/
-    
-}
-
-#herbergement .card_img
-{
-
-
-    position: relative;/*2*/
-    overflow: hidden;/*3*/
 }
 
 a:link /*on enleve le soulignement des liens */
@@ -377,7 +276,62 @@ em /*Prix en gras*/
 {
     font-weight: bold;
     font-style: normal;
+}
 
+/*------------------------*/
+/*Hebergement + Populaire */
+/*------------------------*/
+
+/*Hebergement + Populaire */
+
+#partie_supp
+{
+    display:flex;
+    justify-content: space-between; 
+}
+
+/*Hebergement */
+
+#hebergement
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding : 3%;
+    width: 85%;
+    /*min-width: 375px;*/
+    border-radius: 20px;
+}
+
+#hebergement a
+{
+    width: 30%;
+}
+
+/*Contient toutes les vignettes*/
+
+#hebergement #ensemble_vign
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/*Une vignettes*/
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;  
+    padding : 10px;
+    margin-top : 5px;
+    margin-bottom : 20px;
+    transition: transform .1s; 
+    /*transition : mise en place du zoom sur la carte lors du survole*/
+    
 }
 
 /*Zoom au survole*/
@@ -395,13 +349,7 @@ a .card:hover
 {
     
     width: 100%;/*4*/
-    height: 180px;
-
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
-
+    height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -410,13 +358,18 @@ a .card:hover
 
 /* Populaire */
 
+#populaire a
+{
+    width: 30%;
+}
+
 #populaire
 {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding : 2%;
+    padding : 3%;
     margin-left: 2%;
 }
 
@@ -538,10 +491,11 @@ a #short_card1:hover ,a #short_card2:hover ,a #short_card3:hover ,a #short_card4
     transform: scale(1.05);
 }
 
+
+
 #short_card1 img 
 {
     height: 460px;
-
 }
 
 #short_card2 img
@@ -573,6 +527,7 @@ a #short_card1:hover ,a #short_card2:hover ,a #short_card3:hover ,a #short_card4
     height: 160px;
 
 }
+
 
 #deux
 {

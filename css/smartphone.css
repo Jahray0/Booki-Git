@@ -1,6 +1,7 @@
 body 
 {
     min-width: 300px;
+    background-color: rgb(0, 47, 255);
 }
 
 main
@@ -9,11 +10,16 @@ main
     min-width: 200px;  
 }
 
+nav
+{
+    width: 100%;
+}
+
 header
 {
     display : flex;
     flex-direction: column;
-    width: 0;
+    width: 100%;
 }
 
 header img
@@ -40,6 +46,7 @@ header img
     min-width: 250px;
     /*border-top: none;*/
     padding : 0px;
+    justify-content: center;
 }
 
 #menu li:hover
@@ -55,6 +62,7 @@ header img
     border-top: 2px solid white;  
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 #menu li a
@@ -141,20 +149,49 @@ a .card:hover
     transform: scale(1.05);
 }
 
+#hebergement
+{
+    border-radius: 0;
+    background-color: #ffffff;
+    padding :4%;
+}
 
-#ensemble_vign 
+#hebergement a
+{
+    width: 100%;
+}
+
+
+#hebergement #ensemble_vign 
 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#hebergement img 
+{
+    width: 0;
+    width: 100%;
 }
 
 #populaire
 {
-
     margin-left: 0;
     border-radius: 0;
     padding : 4%;
+}
+
+#populaire a
+{
+    width: 100%;
+}
+
+#populaire #ensemble_vign 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #populaire .card_body
@@ -162,25 +199,21 @@ a .card:hover
     margin-left: 10px;
 }
 
+#populaire img
+{
+    max-width: 170px;
+    max-height: 175px;
+    height: 175px;
+    width: 170px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
 #populaire .card
 {
     min-width: 300px;
-}
-
-
-
-
-
-#hebergement
-{
-
-    margin-left: unset;
-    border-radius: unset;
-    width: 100%;
-    min-width: unset;
-    background-color: white;
-    padding : 4%;
-    
+    flex-direction: row;
 }
 
 #hebergement #ensemble_vign 
@@ -188,10 +221,6 @@ a .card:hover
     justify-content: center;
 }
 
-#hebergement img
-{
-    width: 330px;
-}
 
 
 #activite
