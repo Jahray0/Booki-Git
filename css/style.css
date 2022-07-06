@@ -326,7 +326,7 @@ em /*Prix en gras*/
     flex-direction: column;
     background-color: white;
     border-radius: 20px;  
-    padding : 10px;
+    padding : 5px;
     margin-top : 5px;
     margin-bottom : 20px;
     transition: transform .1s; 
@@ -375,7 +375,7 @@ a .card:hover
 
 
 
-#populaire #titre
+#populaire .titre
 {
     display: flex;
     flex-direction: row;
@@ -385,21 +385,21 @@ a .card:hover
 
 /*étoile noire a coté de populaire*/
 
-#populaire #titre i[class="fa-solid fa-star"]
+#populaire .titre i[class="fa-solid fa-star"]
 {
     font-size: x-large;
 }
 
 /*corps de la vignette*/
 
-#populaire #card_body
+.card_body
 {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 /*Décalage des etoiles pour la partie populaire*/
 
-#populaire #card_stars i
+#populaire .card_stars i
 {
     margin-top: 15%;
 }
@@ -408,26 +408,31 @@ a .card:hover
 
 #populaire img
 {
-    max-width: 170px;
+    /*max-width: 170px;
     max-height: 175px;
     height: 175px;
-    width: 170px;
+    width: 170px;*/
+    height: 175px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
 }
 
-/*#populaire #texte
-{
-    display : flex;
-    flex-direction: column;
-}*/
-
 #populaire .card
 {
     display : flex;
     flex-direction: row;
-  
+}
+
+#populaire .card_body
+{
+    width: 60%;
+}
+
+#populaire .card_img
+{
+    width: 40%;
 }
 
 .card_stars
@@ -454,7 +459,7 @@ a .card:hover
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     width: 100%;
     height: auto;
@@ -464,7 +469,6 @@ a .card:hover
 
 #activite img
 {
-    
     width: 350px;
     height: 400px;
     object-fit: cover;
