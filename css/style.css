@@ -315,6 +315,7 @@ em /*Prix en gras*/
 #hebergement .card
 {
     height: auto;
+    min-width: 150px;
 }
 
 #poulaire .card
