@@ -90,6 +90,11 @@ header img
     flex-direction: column;   
 }
 
+#bloc_filtre p
+{
+    font-size: 1em; 
+}
+
 
 #bloc_filtre .titre
 {
@@ -100,6 +105,12 @@ header img
 {
     position: relative;
     right: 20px;
+}
+
+.boutton i 
+{
+    height: 40px;
+    width: 40px;
 }
 
 input
