@@ -62,7 +62,6 @@ header img
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-
 }
 
 #menu li a
@@ -126,7 +125,6 @@ i[class="fa-solid fa-magnifying-glass"]
     height: 50px;
 }
 
-
 #partie_supp
 {
     flex-direction: column-reverse;
@@ -157,7 +155,7 @@ a .card:hover
 }
 
 
-#hebergement #ensemble_vign 
+#hebergement .ensemble_vign 
 {
     display: flex;
     justify-content: center;
@@ -182,7 +180,7 @@ a .card:hover
     width: 100%;
 }
 
-#populaire #ensemble_vign 
+#populaire .ensemble_vign 
 {
     display: flex;
     justify-content: center;
@@ -191,7 +189,15 @@ a .card:hover
 
 #populaire .card_body
 {
+    display: flex;
     margin-left: 10px;
+    flex-direction: column;
+}
+
+#populaire .card_stars
+{
+    display: flex;
+    align-content: flex-end;
 }
 
 #populaire img
@@ -211,11 +217,9 @@ a .card:hover
     flex-direction: row;
 }
 
-
-
 #hebergement .ensemble_vign 
 {
-    justify-content: center;
+   justify-content: center;
 }
 
 #activite
@@ -225,7 +229,6 @@ a .card:hover
 
 #activite img
 {
-    /*width: 350px;*/
     height: 140px;
 }
 

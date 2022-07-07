@@ -15,9 +15,7 @@ main
 {
     width: 90%;
     min-width: 300px;
-	margin: auto;
-
-    
+	margin: auto;   
 }
 
 * 
@@ -45,6 +43,7 @@ header
     min-width: 200px;
 	margin: auto;
 }
+
 
 /*taille du logo*/
 
@@ -306,11 +305,12 @@ em /*Prix en gras*/
 #hebergement a
 {
     width: 30%;
+    height: 300px;
 }
 
 /*Contient toutes les vignettes*/
 
-#hebergement #ensemble_vign
+#hebergement .ensemble_vign
 {
     display : flex;
     flex-direction: row;
@@ -352,8 +352,7 @@ a .card:hover
     height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
-    
+    object-fit: cover;   
 }
 
 /* Populaire */
@@ -399,19 +398,25 @@ a .card:hover
 
 /*Décalage des etoiles pour la partie populaire*/
 
-#populaire .card_stars i
+#populaire .card_body
 {
-    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+#populaire .card_stars
+{
+    /*margin-top: 15%;*/
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
 }
 
 /*image dans la vignette*/
 
 #populaire img
 {
-    /*max-width: 170px;
-    max-height: 175px;
-    height: 175px;
-    width: 170px;*/
     height: 175px;
     width: 100%;
     border-top-left-radius: 20px;
@@ -427,7 +432,9 @@ a .card:hover
 
 #populaire .card_body
 {
+    display: flex;
     width: 60%;
+    justify-content: space-between;
 }
 
 #populaire .card_img
@@ -435,13 +442,27 @@ a .card:hover
     width: 40%;
 }
 
-.card_stars
+#populaire .card_price
 {
-    color : #0065FC;
+    padding-bottom: 8%;
+}
+
+#populaire .card_stars
+{
+    padding-bottom: 15px;
 }
 
 
 
+.card_stars .note--blue
+{
+    color : #0065FC;
+}
+
+.card_stars .note--grey
+{
+    color : rgb(190, 190, 190);
+}
 
 #activite
 {
@@ -464,8 +485,6 @@ a .card:hover
     height: auto;
     object-fit: cover;
 }
-
-
 
 #activite img
 {
@@ -505,6 +524,9 @@ a #short_card1:hover ,a #short_card2:hover ,a #short_card3:hover ,a #short_card4
 #deux
 {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #trois
@@ -515,6 +537,9 @@ a #short_card1:hover ,a #short_card2:hover ,a #short_card3:hover ,a #short_card4
 #quatre
 {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -527,49 +552,26 @@ a #short_card1:hover ,a #short_card2:hover ,a #short_card3:hover ,a #short_card4
 #short_card2 img
 {
     height: 210px;
-
 }
 
 #short_card3 img
 {
     height: 140px;
-
 }
 
 #short_card4 img
 {
     height: 460px;
-
 }
 
 #short_card5 img
 {
     height: 160px;
-
 }
 
 #short_card6 img
 {
     height: 160px;
-
-}
-
-
-
-#deux
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-
-#quatre
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 footer

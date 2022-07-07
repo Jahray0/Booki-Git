@@ -18,7 +18,7 @@
     margin-left: 0;
 }
 
-#ensemble_vign
+.ensemble_vign
 {
     display:flex;
     flex-direction: row;
@@ -52,6 +52,17 @@
     border-top-right-radius: 20px;
 }
 
+#populaire .card_price
+{
+    padding-bottom: 0;
+}
+
+#populaire .card_stars i
+{
+    margin-top: 0;
+}
+
+
 #short_card1, #short_card2, #short_card3, #short_card4, #short_card5, #short_card6
 {
     margin-bottom: 20px;
@@ -59,7 +70,6 @@
 
 #activite img
 {
-    /*width: 350px;*/
     height: 140px;
 }
 
