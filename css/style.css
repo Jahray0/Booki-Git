@@ -32,6 +32,10 @@ body
     margin: 0;  
 }
 
+#hebergement h3
+{
+    height: 35px;
+}
 /*en-tete constitué du logo et des bouttons hébergement et activité*/
 
 header
@@ -308,6 +312,16 @@ em /*Prix en gras*/
     height: 300px;
 }
 
+#hebergement .card
+{
+    height: auto;
+}
+
+#poulaire .card
+{
+    height: auto;
+}
+
 /*Contient toutes les vignettes*/
 
 #hebergement .ensemble_vign
@@ -320,6 +334,8 @@ em /*Prix en gras*/
 
 /*Une vignettes*/
 
+
+
 .card
 {
     display: flex;
@@ -330,8 +346,7 @@ em /*Prix en gras*/
     margin-top : 5px;
     margin-bottom : 20px;
     transition: transform .1s; 
-    /*transition : mise en place du zoom sur la carte lors du survole*/
-    
+    /*transition : mise en place du zoom sur la carte lors du survole*/    
 }
 
 /*Zoom au survole*/

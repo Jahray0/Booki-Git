@@ -215,6 +215,7 @@ a .card:hover
 {
     min-width: 300px;
     flex-direction: row;
+    height: 180px;
 }
 
 #hebergement .ensemble_vign 
