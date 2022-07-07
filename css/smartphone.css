@@ -1,7 +1,6 @@
 body 
 {
     min-width: 300px;
-    background-color: rgb(0, 47, 255);
 }
 
 main
@@ -62,6 +61,7 @@ header img
     border-top: 2px solid white;  
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 
 }
 
@@ -69,8 +69,6 @@ header img
 {
     padding :15px;
 }
-
-
 
 #recherche
 {
@@ -90,10 +88,11 @@ header img
 
 #bloc_filtre
 {
-    flex-direction: column;
+    flex-direction: column;   
 }
 
-#bloc_filtre #titre
+
+#bloc_filtre .titre
 {
     padding-left: 20px;
 }
@@ -103,8 +102,6 @@ header img
     position: relative;
     right: 20px;
 }
-
-
 
 input
 {
@@ -127,8 +124,6 @@ i[class="fa-solid fa-magnifying-glass"]
     color : white;
     border-radius: 15px;
     height: 50px;
-
-
 }
 
 
@@ -223,8 +218,6 @@ a .card:hover
     justify-content: center;
 }
 
-
-
 #activite
 {
     padding : 4%;
@@ -232,20 +225,20 @@ a .card:hover
 
 #activite img
 {
-    width: 350px;
+    /*width: 350px;*/
     height: 140px;
 }
 
 #activite #ensemble_card
 {
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-
-
-
-
-
+#un, #deux, #trois, #quatre
+{
+    width: 100%;
+}
 
 footer
 {

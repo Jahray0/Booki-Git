@@ -1,19 +1,10 @@
 #html
 {
     min-width: 950px;
-
 }
-
-body
-{
-    background-color: aqua;
-}
-
-
-
 #partie_supp
 {
-    flex-direction: column;
+    flex-direction:column-reverse;
 }
 
 #hebergement
@@ -21,7 +12,6 @@ body
     width: 100%;
     margin-bottom: 30px;
 }
-
 
 #populaire
 {
@@ -60,10 +50,26 @@ body
     max-width: none;
     border-bottom-left-radius: 0;
     border-top-right-radius: 20px;
-
 }
 
 #short_card1, #short_card2, #short_card3, #short_card4, #short_card5, #short_card6
 {
     margin-bottom: 20px;
+}
+
+#activite img
+{
+    /*width: 350px;*/
+    height: 140px;
+}
+
+#activite #ensemble_card
+{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#un, #deux, #trois, #quatre
+{
+    width: 100%;
 }
