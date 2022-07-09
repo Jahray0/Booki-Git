@@ -2,6 +2,12 @@
 {
     min-width: 950px;
 }
+
+#menu li
+{
+    padding-top: 30px;
+}
+
 #partie_supp
 {
     flex-direction:column-reverse;
@@ -77,7 +83,7 @@
 
 #activite img
 {
-    height: 140px;
+    height: 200px;
 }
 
 #activite #ensemble_card
@@ -89,4 +95,9 @@
 #un, #deux, #trois, #quatre
 {
     width: 100%;
+}
+
+footer
+{
+    padding-right: 0;
 }
